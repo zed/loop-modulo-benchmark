@@ -1,0 +1,11 @@
+/.redo*
+/.do_built*
+*.tmp*
+*.did
+/primes_below
+/primes_below-c
+/primes_below.c
+/primes_below.o
+/primes_below.html
+/primes_below.c.html
+/output.txt
