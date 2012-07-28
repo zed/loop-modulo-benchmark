@@ -52,15 +52,14 @@ To try individual cases:
 -  `primes_below-c` requires [Pypy source code and binary](http://pypy.org/download.html)
    (`translate.py` script):
 
-       $ PYPY_ROOT=/path/to/pypy-source ./do primes_below-c
+        $ PYPY_ROOT=/path/to/pypy-source ./do primes_below-c
 
-- `primes_below` requires `cython`:
+- `primes_below` requires `cython` and `pkg-config` should know where
+  python headers and libraries are:
 
-       $ pip install cython
+        $ pip install cython
 
-  `pkg-config` should know where python headers and libraries are.
-
-       $ CYTHON=venv/bin/cython ./do primes_below
+        $ CYTHON=venv/bin/cython ./do primes_below
 
 
 `pypy`, `jython`, `python`, `python3` binaries should be in `PATH`.
