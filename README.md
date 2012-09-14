@@ -14,8 +14,8 @@ Test for-loop, modulo performance using RPython, Pypy, Cython, Jython, CPython 2
     |----------------+---------+---------------|
     | primes_below   |    2.60 |          0.07 |
     | primes_below-c |    5.70 |          0.15 |
+    | pypy           |    7.14 |          0.19 |
     | python (numba) |    7.33 |          0.20 |
-    | pypy           |    7.48 |          0.20 |
     | jython         |   34.36 |          0.92 |
     | python         |   37.53 |          1.00 |
     | python3        |   65.59 |          1.75 |
@@ -39,10 +39,10 @@ To try individual cases:
 
 #### Software Versions
 
-    | PyPy    |  1.8.0 |
+    | PyPy    |  1.9.0 |
     | Jython  |  2.5.1 |
     | Python  |  2.7.3 |
-    | Python3 |    3.2 |
+    | Python3 |  3.2.3 |
     | Cython  | 0.15.1 |
 
 
