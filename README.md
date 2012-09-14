@@ -1,7 +1,7 @@
 loop-modulo-benchmark
 =====================
 
-Test for-loop, modulo division performance using RPython, Pypy, Cython, Jython, CPython 2.x, CPython 3
+Test for-loop, modulo performance using RPython, Pypy, Cython, Jython, CPython 2.x, CPython 3, numba
 
 `primes_below.py` originated from
 [Interpreting a benchmark in C, Clojure, Python, Ruby, Scala and others](http://stackoverflow.com/questions/11641098/interpreting-a-benchmark-in-c-clojure-python-ruby-scala-and-others) StackOverflow question.
@@ -14,11 +14,12 @@ Test for-loop, modulo division performance using RPython, Pypy, Cython, Jython, 
     |----------------+---------+---------------|
     | primes_below   |    2.60 |          0.07 |
     | primes_below-c |    5.70 |          0.15 |
+    | python (numba) |    7.33 |          0.20 |
     | pypy           |    7.48 |          0.20 |
     | jython         |   34.36 |          0.92 |
     | python         |   37.53 |          1.00 |
     | python3        |   65.59 |          1.75 |
-    #+TBLFM: $3=$2/@7$2;%.2f
+    #+TBLFM: $3=$2/@8$2;%.2f
 
 
 - primes_below-c : RPython
@@ -64,3 +65,4 @@ To try individual cases:
 
 `pypy`, `jython`, `python`, `python3` binaries should be in `PATH`.
 
+- python (numba) requires [numba](https://github.com/numba/numba). Follow installation instructions there
