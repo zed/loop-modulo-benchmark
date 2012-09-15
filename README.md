@@ -12,6 +12,7 @@ Test for-loop, modulo performance using RPython, Pypy, Cython, Jython, CPython 2
     | executable     |   time, |        ratio, |
     |                | seconds | w.r.t. python |
     |----------------+---------+---------------|
+    | artem_ice (C)  |    2.19 |          0.06 |
     | primes_below   |    2.60 |          0.07 |
     | primes_below-c |    5.70 |          0.15 |
     | pypy           |    7.14 |          0.19 |
@@ -19,9 +20,10 @@ Test for-loop, modulo performance using RPython, Pypy, Cython, Jython, CPython 2
     | jython         |   34.36 |          0.92 |
     | python         |   37.53 |          1.00 |
     | python3        |   65.59 |          1.75 |
-    #+TBLFM: $3=$2/@8$2;%.2f
+    #+TBLFM: $3=$2/@9$2;%.2f
 
 
+- artem_ice : C programming language (for comparison with Python-based variants)
 - primes_below-c : RPython
 - primes_below : Cython
 
